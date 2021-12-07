@@ -1,0 +1,184 @@
+using System;
+
+public class Program
+
+{
+
+public static void Main()
+
+{
+
+
+ int D = Convert.ToInt32(Console.ReadLine());
+
+ int M = Convert.ToInt32(Console.ReadLine());
+
+ switch (M)
+
+ {
+
+  case 1:
+
+  case 3:
+
+  case 5:
+
+  case 7:
+
+  case 8:
+
+  case 10:
+
+   if (D == 31)
+
+   {
+
+    Console.WriteLine(D = 1);
+
+    Console.WriteLine(M = M + 1);
+
+    break;
+
+   }
+
+   else if (D > 31)
+
+   {
+
+    Console.WriteLine("Такой даты нет!");
+
+    break;
+
+   }
+
+   else
+
+   {
+
+    Console.WriteLine(D + 1);
+
+    Console.WriteLine(M);
+
+    break;
+
+   }
+
+  case 2:
+
+   if (D == 28)
+
+   {
+
+    Console.WriteLine(D = 1);
+
+    Console.WriteLine(M = M + 1);
+
+    break;
+
+   }
+
+   else if (D > 28)
+
+   {
+
+    Console.WriteLine("Такой даты нет!");
+
+    break;
+
+   }
+
+   else
+
+   {
+
+    Console.WriteLine(D + 1);
+
+    Console.WriteLine(M);
+
+    break;
+
+   }
+
+  case 4:
+
+  case 6:
+
+  case 9:
+
+  case 11:
+
+   if (D == 30)
+
+   {
+
+    Console.WriteLine(D = 1);
+
+    Console.WriteLine(M = M + 1);
+
+    break;
+
+   }
+
+   else if (D > 30)
+
+   {
+
+    Console.WriteLine("Такой даты нет!");
+
+    break;
+
+   }
+
+   else
+
+   {
+
+    Console.WriteLine(D + 1);
+
+    Console.WriteLine(M);
+
+    break;
+
+   }
+
+  case 12:
+
+   if (D == 31)
+
+   {
+
+    Console.WriteLine(D = 1);
+
+    Console.WriteLine(M = 1);
+
+    break;
+
+   }
+
+   else if (D > 31)
+
+   {
+
+    Console.WriteLine("Такой даты нет!");
+
+    break;
+
+   }
+
+   else
+
+   {
+
+    Console.WriteLine(D + 1);
+
+    Console.WriteLine(M);
+
+    break;
+
+   }
+
+ }
+
+}
+
+}
