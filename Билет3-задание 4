@@ -1,0 +1,33 @@
+#include <stdio.h>
+float calc(float a, float b,  int op){
+    switch (op) {
+    case 1:
+        return a-b;
+        break;
+    case 2:
+        return a*b;
+        break;
+    case 3:
+        return a/b;
+        break;
+    default:
+        return a+b;
+        break;
+    }
+}
+ 
+int main(void)
+{
+    int a,b,i;
+    printf("A:");
+    scanf("%i", &a);
+    printf("B:");
+    scanf("%i", &b);
+    for (i=1;i<=3;i++){
+        int n;
+        printf("N:");
+        scanf("%i", &n);
+        printf("Rez:%f\n",calc(a,b,n));
+     }
+    return 0;
+}
